@@ -7,10 +7,10 @@ import Quantity from "./components/Quantity";
 import { IMenuTag } from "./types";
 
 const MENU_ITEMS: IMenuTag[] = [
-  { title: "shop", tag: "new", tagColor: "#01bad4" },
+  { title: "shop", tag: "new", tagColor: "bg-[#01bad4]" },
   { title: "product" },
-  { title: "sale", tag: "hot", tagColor: "#ffa800" },
-  { title: "porfolio" },
+  { title: "sale", tag: "hot", tagColor: "bg-[#ffa800]" },
+  { title: "portfolio" },
   { title: "lookbook" },
   { title: "blog" },
 ];
@@ -43,7 +43,7 @@ const Header = () => {
     <>
       <header
         className={cx(
-          "flex bg-white justify-between align-middle h-[70px] px-4 w-full transition-transform duration-300 sticky",
+          "flex bg-white justify-between align-middle h-[70px] px-4 w-full transition-transform duration-300 sticky z-50",
           !isScrollUp ? "top-[-70px]" : "top-0",
           y > 4 && "shadow-[1px_1px_3px_0_rgba(0,0,0,0.1)]"
         )}
@@ -61,8 +61,8 @@ const Header = () => {
                 {tag && (
                   <span
                     className={cx(
-                      "absolute top-[-63%] left-[70%] text-[9px] px-[7px] py-[1px] text-white rounded-lg leading-4",
-                      `bg-[${tagColor}]`
+                      "absolute top-[-60%] left-[70%] text-[9px] px-[7px] py-[1px] text-white rounded-lg leading-4",
+                      tagColor
                     )}
                   >
                     {tag}
@@ -81,7 +81,7 @@ const Header = () => {
             <AiOutlineUser />
           </div>
           <div className={iconStyle}>
-            <AiOutlineHeart className="font-light" />
+            <AiOutlineHeart className="font-light " />
             <Quantity amount={1} />
           </div>
           <div className={iconStyle}>
