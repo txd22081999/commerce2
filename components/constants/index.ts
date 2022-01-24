@@ -1,3 +1,5 @@
+export * from "./treding-products";
+
 export const BASE_URL: string = "https://cdn.shopify.com/s/files";
 export const VIDEO_BANNER_SRC: string = `${BASE_URL}/1/0332/6420/5963/files/jewelry_video.mp4?v=14944919741897558918`;
 

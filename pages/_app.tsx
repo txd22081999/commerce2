@@ -5,7 +5,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <MainLayout>
-      <main className="bg-background min-h-screen">
+      <main className="min-h-screen">
         <Component {...pageProps} />
       </main>
     </MainLayout>

@@ -20,11 +20,16 @@ module.exports = {
         background: "#F6F6F8",
         ["sub-text"]: "#878787",
         ["primary-text"]: "#222222",
+        ["green-new"]: "#109533",
+      },
+      fontSize: {
+        tiny: "13px",
+        ...defaultheme.fontSize,
       },
       boxShadow: {
         "1xl": "1px 1px 3px 0 rgb(0 0 0 / 30%)",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-scoped-groups")],
 };

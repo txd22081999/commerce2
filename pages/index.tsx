@@ -1,5 +1,6 @@
 import Benefits from "components/Home/Benefits";
 import Collections from "components/Home/Collections";
+import Trending from "components/Home/Trending";
 import VideoBanner from "components/Home/VideoBanner";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <div className="mx-auto max-w-[74rem] px-3">
         <Benefits />
         <Collections />
+        <Trending />
       </div>
     </div>
   );
